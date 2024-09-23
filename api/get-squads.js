@@ -1,15 +1,6 @@
 const mongoose = require('mongoose');
 const Squad = require('../models/Squad');
-
-// Função para conectar ao MongoDB
-const connectDB = async () => {
-  if (mongoose.connection.readyState === 0) {
-    await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-  }
-};
+const connectDB = require('../config/connectDB'); // Ajuste conforme a localização
 
 module.exports = async (req, res) => {
   try {
