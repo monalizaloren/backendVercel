@@ -1,0 +1,11 @@
+{
+  "name": "my-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "mongoose": "^6.0.0",
+    "express": "^4.17.1"
+  }
+}
